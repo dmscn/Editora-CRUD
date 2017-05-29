@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Editora-CRUD</string>
+    <string name="txt_title">Titulo:</string>
+    <string name="txt_author">Autor</string>
+    <string name="txt_publisher">Editora</string>
+    <string name="btn_send">Enviar</string>
+</resources>
