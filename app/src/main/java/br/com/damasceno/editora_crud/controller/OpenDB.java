@@ -5,13 +5,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class OpenDB extends SQLiteOpenHelper {
-    private static final String DB_NAME = "mydb.db";
-    private static final String TABLE = "books";
-    private static final String ID = "id";
-    private static final String TITLE = "title";
-    private static final String AUTHOR = "author";
-    private static final String PUBLISHER = "publisher";
-    private static final int VERSION =  1;
+    public static final String DB_NAME = "mydb.db";
+    public static final String TABLE = "books";
+    public static final String ID = "id";
+    public static final String TITLE = "title";
+    public static final String AUTHOR = "author";
+    public static final String PUBLISHER = "publisher";
+    public static final int VERSION =  1;
 
     public OpenDB (Context context) {
         super(context, DB_NAME, null, VERSION);
