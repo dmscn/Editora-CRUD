@@ -7,11 +7,18 @@
     tools:context="br.com.damasceno.editora_crud.Consulta">
 
     <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/lstBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"></ListView>
+        android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReturn"
+        android:text="@string/Return"
+        android:layout_below="@+id/listView"
+        android:layout_marginTop="10dp"/>
 
 </RelativeLayout>

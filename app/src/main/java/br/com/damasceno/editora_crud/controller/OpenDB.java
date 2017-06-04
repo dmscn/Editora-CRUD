@@ -7,11 +7,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class OpenDB extends SQLiteOpenHelper {
     public static final String DB_NAME = "mydb.db";
     public static final String TABLE = "books";
-    public static final String ID = "id";
+    public static final String ID = "_id";
     public static final String TITLE = "title";
     public static final String AUTHOR = "author";
     public static final String PUBLISHER = "publisher";
-    public static final int VERSION =  1;
+    public static final int VERSION =  2;
 
     public OpenDB (Context context) {
         super(context, DB_NAME, null, VERSION);
@@ -20,7 +20,7 @@ public class OpenDB extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String sql = "CREATE TABLE " + TABLE + "("
-                + ID + "integer primary key autoincrement,"
+                + ID + " integer primary key autoincrement,"
                 + TITLE + " text,"
                 + AUTHOR + " text,"
                 + PUBLISHER + " text"

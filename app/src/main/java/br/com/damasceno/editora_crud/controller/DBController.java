@@ -2,6 +2,7 @@ package br.com.damasceno.editora_crud.controller;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class DBController {
@@ -30,5 +31,20 @@ public class DBController {
         } else {
             return "Erro ao inserir o registro";
         }
+    }
+
+    public Cursor loadData() {
+        Cursor cursor;
+        String[] fields = {OpenDB.ID, OpenDB.TITLE};
+        db = openDB.getReadableDatabase();
+        cursor = db.query(openDB.TABLE, fields, null, null, null, null, null, null);
+
+        if(cursor!=null) {
+            cursor.moveToFirst();
+        }
+
+        db.close();
+
+        return cursor;
     }
 }

@@ -1,5 +1,6 @@
 package br.com.damasceno.editora_crud;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,6 +33,19 @@ public class MainActivity extends AppCompatActivity {
                 String result = crud.insertData(title, author, publisher);
 
                 Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
+
+
+            }
+        });
+
+        Button btnList = (Button) findViewById(R.id.btnList);
+
+        btnList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Consulta.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

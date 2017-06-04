@@ -4,4 +4,7 @@
     <string name="txt_author">Autor</string>
     <string name="txt_publisher">Editora</string>
     <string name="btn_send">Enviar</string>
+    <string name="txt_id">ID</string>
+    <string name="btn_list">Ver Lista</string>
+    <string name="Return">Voltar</string>
 </resources>
