@@ -7,4 +7,7 @@
     <string name="txt_id">ID</string>
     <string name="btn_list">Ver Lista</string>
     <string name="Return">Voltar</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_add">Adicionar</string>
 </resources>

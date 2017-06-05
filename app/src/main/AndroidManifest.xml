@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".List">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Consulta"></activity>
+        <activity android:name=".Insert" android:parentActivityName=".List"></activity>
+        <activity android:name=".Update" android:parentActivityName=".List"></activity>
     </application>
 
 </manifest>
